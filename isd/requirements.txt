@@ -1,0 +1,12 @@
+Django>=5.0,<6.0
+djangorestframework>=3.15,<4.0   # for APIs
+django-cors-headers>=4.3,<5.0    # for frontend-backend communication
+psycopg[binary]>=3.1,<4.0        # PostgreSQL driver (v3)
+psycopg2-binary>=2.9,<3.0        # Compatibility for packages that still use psycopg2
+djangorestframework-simplejwt>=5.3      # For JWT tokens
+drf-spectacular>=0.27.0          # For automatic API documentation
+python-dotenv                    # For loading environment variables from .env file
+pandas>=2.0,<3.0                 # For data processing and feature imputation
+numpy>=1.24,<2.0                 # Required by pandas
+lifelines>=0.30.0                # Survival analysis metrics for dataset stats
+scipy>=1.16,<2.0                 # lifelines dependency (score tests)

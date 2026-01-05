@@ -1,0 +1,29 @@
+{
+  "name": "f25project-deptofcomputingscience",
+  "version": "1.0.0",
+  "description": "DO NOT use this branch. Only meant for merging through PRs.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "mocha \"test/**/*.spec.js\" --timeout 20000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UAlberta-CMPUT401/f25project-DeptofComputingScience.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UAlberta-CMPUT401/f25project-DeptofComputingScience/issues"
+  },
+  "homepage": "https://github.com/UAlberta-CMPUT401/f25project-DeptofComputingScience#readme",
+  "devDependencies": {
+    "chai": "^6.2.0",
+    "chromedriver": "^141.0.2",
+    "mocha": "^11.7.4",
+    "selenium-webdriver": "^4.36.0"
+  }
+}

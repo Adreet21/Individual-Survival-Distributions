@@ -1,0 +1,33 @@
+name: Test App Startup
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["sprint4", "make-scripts-executable"]
+
+jobs:
+  test-start:
+    runs-on:
+      - self-hosted
+      - linux
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Make scripts executable
+        run: |
+          chmod +x test_scripts/test_backend.sh
+          chmod +x test_scripts/test_frontend.sh
+
+      - name: Test Backend Startup
+        run: |
+          echo "Testing backend startup..."
+          bash test_scripts/test_backend.sh
+          echo "✅ Backend test completed successfully!"
+
+      - name: Test Frontend Startup
+        run: |
+          echo "Testing frontend startup..."
+          bash test_scripts/test_frontend.sh
+          echo "✅ Frontend test completed successfully!"

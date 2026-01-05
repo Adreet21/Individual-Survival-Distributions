@@ -1,0 +1,13 @@
+site_name: Fall 2025 EZ Survival Project
+
+nav:
+  - Home: index.md
+  - Project Requirements: requirements.md
+  - Software Design: design.md
+  - Project Management: management.md
+  - Teamwork: teamwork.md
+
+theme: readthedocs
+
+markdown_extensions:
+  - attr_list

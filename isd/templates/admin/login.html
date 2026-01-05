@@ -1,0 +1,53 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block title %}{% trans "Log in" %}{% endblock %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'admin/css/login.css' %}">
+<style>
+    /* hide admin left navigation on the login page */
+    #nav-sidebar,
+    .nav-sidebar,
+    .module,
+    .app-list,
+    #content-main .module {
+        display: none !important;
+    }
+
+    #content,
+    #content-main {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <form action="" method="post" id="login-form">
+        {% csrf_token %}
+        <div class="form-row">
+            {{ form.username.label_tag }}
+            {{ form.username }}
+        </div>
+        <div class="form-row">
+            {{ form.password.label_tag }}
+            {{ form.password }}
+        </div>
+
+        {% if form.errors %}
+        <p class="errornote">{% trans "Please correct the error below." %}</p>
+        {% endif %}
+
+        <div class="submit-row">
+            <input type="submit" value="{% trans 'Log in' %}" />
+        </div>
+    </form>
+
+    <p style="margin-top:1em;">
+        <a href="/admin/password/forgot/">Forgot your password?</a>
+    </p>
+</div>
+{% endblock %}

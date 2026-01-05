@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* App globals */
+:root { color-scheme: light; }
+html, body, #root { height: 100%; }
+
+
+/* utility for the thin top-border */
+.border-thin { border-width: 1px; }
+
+
+
+/* card animations */
+@keyframes card-zoom {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+   100% {
+    transform: scale(1);
+  }
+}
+
+.card-zoom {
+  animation: card-zoom 160ms ease-out;
+}
+
+/* Highlight animation for newly created items */
+@keyframes highlight-new {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.animate-highlight-new {
+  animation: highlight-new 1.5s ease-out infinite;
+}

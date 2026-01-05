@@ -1,0 +1,19 @@
+Django>=5.0,<6.0
+djangorestframework>=3.15,<4.0          # for APIs
+django-cors-headers>=4.3,<5.0           # for frontend-backend communication
+psycopg2-binary>=2.9,<3.0               # PostgreSQL driver
+djangorestframework-simplejwt>=5.3      # For JWT tokens
+drf-spectacular                         # For API documentation
+python-dotenv                           # For environment variable management
+gunicorn>=23.0.0                        # WSGI HTTP server for production
+pytest                                  # for testing
+pytest-django                           # for testing Django applications
+selenium                                # for browser automation in tests
+webdriver-manager                       # for browser automation in tests
+django-extensions                       # for additional management commands
+pandas
+requests>=2.31.0                        # for ML API HTTP client
+celery>=5.3.0                           # for async task queue
+redis>=5.0.0                            # for Celery broker and result backend
+django-celery-beat>=2.5.0               # for periodic tasks
+django-celery-results>=2.5.0            # for Django database result backend

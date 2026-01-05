@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# TypeScript build info cache
+*.tsbuildinfo
+
+# Environment files (in case you use them later for frontend API URLs)
+.env
+.env.*
+
+# Optional: lock files (if your team prefers not to commit them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
